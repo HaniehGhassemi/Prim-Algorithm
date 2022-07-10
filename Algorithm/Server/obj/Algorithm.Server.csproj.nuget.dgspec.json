@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/hni/Projects/Algorithm/Algorithm/Server/Algorithm.Server.csproj": {}
+    "/Users/hni/Documents/GitHub/Prim-Algorithm/Algorithm/Server/Algorithm.Server.csproj": {}
   },
   "projects": {
-    "/Users/hni/Projects/Algorithm/Algorithm/Client/Algorithm.Client.csproj": {
+    "/Users/hni/Documents/GitHub/Prim-Algorithm/Algorithm/Client/Algorithm.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/hni/Projects/Algorithm/Algorithm/Client/Algorithm.Client.csproj",
+        "projectUniqueName": "/Users/hni/Documents/GitHub/Prim-Algorithm/Algorithm/Client/Algorithm.Client.csproj",
         "projectName": "Algorithm.Client",
-        "projectPath": "/Users/hni/Projects/Algorithm/Algorithm/Client/Algorithm.Client.csproj",
+        "projectPath": "/Users/hni/Documents/GitHub/Prim-Algorithm/Algorithm/Client/Algorithm.Client.csproj",
         "packagesPath": "/Users/hni/.nuget/packages/",
-        "outputPath": "/Users/hni/Projects/Algorithm/Algorithm/Client/obj/",
+        "outputPath": "/Users/hni/Documents/GitHub/Prim-Algorithm/Algorithm/Client/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/hni/.nuget/NuGet/NuGet.Config"
@@ -26,8 +26,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/hni/Projects/Algorithm/Algorithm/Shared/Algorithm.Shared.csproj": {
-                "projectPath": "/Users/hni/Projects/Algorithm/Algorithm/Shared/Algorithm.Shared.csproj"
+              "/Users/hni/Documents/GitHub/Prim-Algorithm/Algorithm/Shared/Algorithm.Shared.csproj": {
+                "projectPath": "/Users/hni/Documents/GitHub/Prim-Algorithm/Algorithm/Shared/Algorithm.Shared.csproj"
               }
             }
           }
@@ -82,14 +82,14 @@
         }
       }
     },
-    "/Users/hni/Projects/Algorithm/Algorithm/Server/Algorithm.Server.csproj": {
+    "/Users/hni/Documents/GitHub/Prim-Algorithm/Algorithm/Server/Algorithm.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/hni/Projects/Algorithm/Algorithm/Server/Algorithm.Server.csproj",
+        "projectUniqueName": "/Users/hni/Documents/GitHub/Prim-Algorithm/Algorithm/Server/Algorithm.Server.csproj",
         "projectName": "Algorithm.Server",
-        "projectPath": "/Users/hni/Projects/Algorithm/Algorithm/Server/Algorithm.Server.csproj",
+        "projectPath": "/Users/hni/Documents/GitHub/Prim-Algorithm/Algorithm/Server/Algorithm.Server.csproj",
         "packagesPath": "/Users/hni/.nuget/packages/",
-        "outputPath": "/Users/hni/Projects/Algorithm/Algorithm/Server/obj/",
+        "outputPath": "/Users/hni/Documents/GitHub/Prim-Algorithm/Algorithm/Server/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/hni/.nuget/NuGet/NuGet.Config"
@@ -104,11 +104,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/hni/Projects/Algorithm/Algorithm/Client/Algorithm.Client.csproj": {
-                "projectPath": "/Users/hni/Projects/Algorithm/Algorithm/Client/Algorithm.Client.csproj"
+              "/Users/hni/Documents/GitHub/Prim-Algorithm/Algorithm/Client/Algorithm.Client.csproj": {
+                "projectPath": "/Users/hni/Documents/GitHub/Prim-Algorithm/Algorithm/Client/Algorithm.Client.csproj"
               },
-              "/Users/hni/Projects/Algorithm/Algorithm/Shared/Algorithm.Shared.csproj": {
-                "projectPath": "/Users/hni/Projects/Algorithm/Algorithm/Shared/Algorithm.Shared.csproj"
+              "/Users/hni/Documents/GitHub/Prim-Algorithm/Algorithm/Shared/Algorithm.Shared.csproj": {
+                "projectPath": "/Users/hni/Documents/GitHub/Prim-Algorithm/Algorithm/Shared/Algorithm.Shared.csproj"
               }
             }
           }
@@ -126,6 +126,10 @@
             "Microsoft.AspNetCore.Components.WebAssembly.Server": {
               "target": "Package",
               "version": "[6.0.6, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.3.1, )"
             }
           },
           "imports": [
@@ -150,14 +154,14 @@
         }
       }
     },
-    "/Users/hni/Projects/Algorithm/Algorithm/Shared/Algorithm.Shared.csproj": {
+    "/Users/hni/Documents/GitHub/Prim-Algorithm/Algorithm/Shared/Algorithm.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/hni/Projects/Algorithm/Algorithm/Shared/Algorithm.Shared.csproj",
+        "projectUniqueName": "/Users/hni/Documents/GitHub/Prim-Algorithm/Algorithm/Shared/Algorithm.Shared.csproj",
         "projectName": "Algorithm.Shared",
-        "projectPath": "/Users/hni/Projects/Algorithm/Algorithm/Shared/Algorithm.Shared.csproj",
+        "projectPath": "/Users/hni/Documents/GitHub/Prim-Algorithm/Algorithm/Shared/Algorithm.Shared.csproj",
         "packagesPath": "/Users/hni/.nuget/packages/",
-        "outputPath": "/Users/hni/Projects/Algorithm/Algorithm/Shared/obj/",
+        "outputPath": "/Users/hni/Documents/GitHub/Prim-Algorithm/Algorithm/Shared/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/hni/.nuget/NuGet/NuGet.Config"
