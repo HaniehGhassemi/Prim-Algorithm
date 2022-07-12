@@ -1,48 +1,109 @@
 ﻿@page "/fetchdata"
 @using Algorithm.Shared
 @inject HttpClient Http
+@inject IJSRuntime JS
 
 <PageTitle>Weather forecast</PageTitle>
 
 <h1>Weather forecast</h1>
 
 <p>This component demonstrates fetching data from the server.</p>
-
-@if (forecasts == null)
+<textarea @onchange="@((e) => {json=e.Value.ToString();})"></textarea>
+<button @onclick="DrawConnect">submit</button>
+<input type="text" @onchange="@((e) => {n=Convert.ToInt32(e.Value.ToString());})" />
+@if (edges == null)
 {
-    <p><em>Loading...</em></p>
+    <p>loading...</p>
 }
 else
 {
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Date</th>
-                <th>Temp. (C)</th>
-                <th>Temp. (F)</th>
-                <th>Summary</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var forecast in forecasts)
-            {
-                <tr>
-                    <td>@forecast.Date.ToShortDateString()</td>
-                    <td>@forecast.TemperatureC</td>
-                    <td>@forecast.TemperatureF</td>
-                    <td>@forecast.Summary</td>
-                </tr>
-            }
-        </tbody>
-    </table>
+    <div class="main">
+        @for (var i = 0; i < @edges.Count; i++)
+        {
+            <div class="circle" id="@i">@i</div>
+        }
+
+
+    </div>
+
 }
+
 
 @code {
-    private WeatherForecast[]? forecasts;
+    private Dto edges;
+    private string json;
+    private int n;
+    //protected override async Task OnInitializedAsync()
+    //{
+    //   // edges = await Http.GetFromJsonAsync<Dto>($"api/Prim/prim?n={edges.Count}");
 
-    protected override async Task OnInitializedAsync()
+
+    //}
+
+    private async Task DrawConnect()
     {
-        forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("WeatherForecast");
+
+        int count = 0;
+
+        List<int[]> vorodi = new List<int[]>();
+        //int[] row = new int[5];
+        string[] arr = new string[json.Length];
+        arr = json.Split(",");
+        //Console.WriteLine(arr.Length);
+        //for (var j = 0; j < arr.Length; j++)
+        //{
+        //    if (count == (arr.Length / n) - 1)
+        //    {
+        //        count = 0;
+        //        //i++;
+        //        vorodi.Add(row);
+        //    }
+        //    row[count] = Convert.ToInt32(arr[j]);
+        //    count++;
+
+        //}
+        int o = 0;
+        for (int l = 0; l < n; l++)
+        {
+            int[] myrow = new int[n];
+            for (int j = 0; j < n; j++)
+            {
+                //if (count  (arr.Length / n) - 1)
+                //{
+
+                //    //i++;
+
+                //}
+                myrow[count] = Convert.ToInt32(arr[j+o]);
+                Console.WriteLine("count is:"+count);
+                Console.WriteLine("arr el:"+arr[j+o]);
+                count=count+1;
+
+            }
+            count = 0;
+            o = o + n;
+            vorodi.Add(myrow);
+        }
+        Console.WriteLine(vorodi.Count);
+        //foreach (var c in json)
+        //{
+        //    if (count==json.Length / n)
+        //    {
+        //        count = 0;
+        //        i++;
+        //    }
+        //    vorodi[i][json.IndexOf(c)] = c;
+        //    count++;
+        //}
+        using var res = await Http.PostAsJsonAsync<List<int[]>>($"api/Prim/prim?n={n}", vorodi);
+        edges = await res.Content.ReadFromJsonAsync<Dto>();
+        //Console.WriteLine(pasokh);
+         StateHasChanged();
+        for (var m = 0; m < edges.edges.Count; m++)
+        {
+            await JS.InvokeVoidAsync("connect", edges.edges[m].V1, edges.edges[m].V2, "black", 3, edges.edges[m].Cost);
+        }
+        
     }
-}
+ }
 

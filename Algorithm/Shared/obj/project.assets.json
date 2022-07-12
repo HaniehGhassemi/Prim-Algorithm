@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/hni/Projects/Algorithm/Algorithm/Shared/Algorithm.Shared.csproj",
+      "projectUniqueName": "/Users/hni/Documents/GitHub/Prim-Algorithm/Algorithm/Shared/Algorithm.Shared.csproj",
       "projectName": "Algorithm.Shared",
-      "projectPath": "/Users/hni/Projects/Algorithm/Algorithm/Shared/Algorithm.Shared.csproj",
+      "projectPath": "/Users/hni/Documents/GitHub/Prim-Algorithm/Algorithm/Shared/Algorithm.Shared.csproj",
       "packagesPath": "/Users/hni/.nuget/packages/",
-      "outputPath": "/Users/hni/Projects/Algorithm/Algorithm/Shared/obj/",
+      "outputPath": "/Users/hni/Documents/GitHub/Prim-Algorithm/Algorithm/Shared/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/hni/.nuget/NuGet/NuGet.Config"
