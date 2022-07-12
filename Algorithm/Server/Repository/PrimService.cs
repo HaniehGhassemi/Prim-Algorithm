@@ -21,7 +21,7 @@ namespace Algorithm.Server.Repositories
                 distance[i] = w[0, i];
             }
 
-            for (int i = 1; i <= n - 1; i++) //repeat n-1
+            for (int i = 1; i <= n - 1; i++)
             {
                 min = 1000000;
                 for (int j = 1; j < n; j++)
