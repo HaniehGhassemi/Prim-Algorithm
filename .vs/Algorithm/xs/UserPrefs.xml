@@ -1,19 +1,30 @@
 ﻿<Properties StartupConfiguration="{BE74320A-64E0-44ED-845F-3A9D010ED81C}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Algorithm.Server PreferredExecutionTarget="/Applications/Safari.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Algorithm/Client/Pages/FetchData.razor">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Algorithm/Server/Controllers/PrimController.cs">
     <Files>
-      <File FileName="Algorithm/Client/Pages/FetchData.razor" Line="1" Column="1" />
+      <File FileName="Algorithm/Server/Repositories/PrimService.cs" Line="9" Column="23" />
+      <File FileName="Algorithm/Server/Controllers/PrimController.cs" Line="1" Column="1" />
+      <File FileName="Algorithm/Shared/Model/Edge.cs" Line="5" Column="18" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Algorithm" expanded="True">
-            <Node name="Algorithm.Client" expanded="True">
-              <Node name="Pages" expanded="True">
-                <Node name="FetchData.razor" selected="True" />
+            <Node name="Algorithm.Server" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="PrimController.cs" selected="True" />
               </Node>
+              <Node name="Repositories" expanded="True" />
             </Node>
-            <Node name="Algorithm.Shared" expanded="True" />
+            <Node name="Algorithm.Shared" expanded="True">
+              <Node name="Model" expanded="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
@@ -22,10 +33,4 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.Algorithm.Server PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

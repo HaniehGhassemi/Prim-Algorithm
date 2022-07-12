@@ -33,47 +33,20 @@ else
     private Dto edges;
     private string json;
     private int n;
-    //protected override async Task OnInitializedAsync()
-    //{
-    //   // edges = await Http.GetFromJsonAsync<Dto>($"api/Prim/prim?n={edges.Count}");
-
-
-    //}
-
     private async Task DrawConnect()
     {
 
         int count = 0;
 
         List<int[]> vorodi = new List<int[]>();
-        //int[] row = new int[5];
         string[] arr = new string[json.Length];
         arr = json.Split(",");
-        //Console.WriteLine(arr.Length);
-        //for (var j = 0; j < arr.Length; j++)
-        //{
-        //    if (count == (arr.Length / n) - 1)
-        //    {
-        //        count = 0;
-        //        //i++;
-        //        vorodi.Add(row);
-        //    }
-        //    row[count] = Convert.ToInt32(arr[j]);
-        //    count++;
-
-        //}
         int o = 0;
         for (int l = 0; l < n; l++)
         {
             int[] myrow = new int[n];
             for (int j = 0; j < n; j++)
             {
-                //if (count  (arr.Length / n) - 1)
-                //{
-
-                //    //i++;
-
-                //}
                 myrow[count] = Convert.ToInt32(arr[j+o]);
                 Console.WriteLine("count is:"+count);
                 Console.WriteLine("arr el:"+arr[j+o]);
@@ -85,19 +58,8 @@ else
             vorodi.Add(myrow);
         }
         Console.WriteLine(vorodi.Count);
-        //foreach (var c in json)
-        //{
-        //    if (count==json.Length / n)
-        //    {
-        //        count = 0;
-        //        i++;
-        //    }
-        //    vorodi[i][json.IndexOf(c)] = c;
-        //    count++;
-        //}
         using var res = await Http.PostAsJsonAsync<List<int[]>>($"api/Prim/prim?n={n}", vorodi);
         edges = await res.Content.ReadFromJsonAsync<Dto>();
-        //Console.WriteLine(pasokh);
          StateHasChanged();
         for (var m = 0; m < edges.edges.Count; m++)
         {
