@@ -34,3 +34,15 @@ C:/Users/sajjad/Desktop/Algorithm-Hanieh/Algorithm/Shared/obj/Debug/net6.0/ref/A
 /Users/hni/Downloads/Algorithm-Hanieh/Algorithm/Shared/obj/Debug/net6.0/refint/Algorithm.Shared.dll
 /Users/hni/Downloads/Algorithm-Hanieh/Algorithm/Shared/obj/Debug/net6.0/Algorithm.Shared.pdb
 /Users/hni/Downloads/Algorithm-Hanieh/Algorithm/Shared/obj/Debug/net6.0/ref/Algorithm.Shared.dll
+/Users/hni/Documents/GitHub/Prim-Algorithm/Algorithm/Shared/bin/Debug/net6.0/Algorithm.Shared.deps.json
+/Users/hni/Documents/GitHub/Prim-Algorithm/Algorithm/Shared/bin/Debug/net6.0/Algorithm.Shared.dll
+/Users/hni/Documents/GitHub/Prim-Algorithm/Algorithm/Shared/bin/Debug/net6.0/Algorithm.Shared.pdb
+/Users/hni/Documents/GitHub/Prim-Algorithm/Algorithm/Shared/obj/Debug/net6.0/Algorithm.Shared.csproj.AssemblyReference.cache
+/Users/hni/Documents/GitHub/Prim-Algorithm/Algorithm/Shared/obj/Debug/net6.0/Algorithm.Shared.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hni/Documents/GitHub/Prim-Algorithm/Algorithm/Shared/obj/Debug/net6.0/Algorithm.Shared.AssemblyInfoInputs.cache
+/Users/hni/Documents/GitHub/Prim-Algorithm/Algorithm/Shared/obj/Debug/net6.0/Algorithm.Shared.AssemblyInfo.cs
+/Users/hni/Documents/GitHub/Prim-Algorithm/Algorithm/Shared/obj/Debug/net6.0/Algorithm.Shared.csproj.CoreCompileInputs.cache
+/Users/hni/Documents/GitHub/Prim-Algorithm/Algorithm/Shared/obj/Debug/net6.0/Algorithm.Shared.dll
+/Users/hni/Documents/GitHub/Prim-Algorithm/Algorithm/Shared/obj/Debug/net6.0/refint/Algorithm.Shared.dll
+/Users/hni/Documents/GitHub/Prim-Algorithm/Algorithm/Shared/obj/Debug/net6.0/Algorithm.Shared.pdb
+/Users/hni/Documents/GitHub/Prim-Algorithm/Algorithm/Shared/obj/Debug/net6.0/ref/Algorithm.Shared.dll
